@@ -7,7 +7,9 @@ In XFCE panels you can add a "General Monitor" item to the panel and have it cal
 Be careful when adding the cpu script. The refresh-period should be longer than 1s since mpstat averages the load over a period of one second. Shorter refreshes might lead to errors.
 
 # Scripts
-## ...fs
+## hdd
+Usage: ./hdd /dev/sda
+
 Monitor remaining free space on the given device. Change the device inside the script to whatever device you want to monitor.
 
 Only needs df, tail and awk which should be preinstalled on most systems.
