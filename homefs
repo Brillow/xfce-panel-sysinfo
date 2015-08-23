@@ -1,0 +1,3 @@
+#!/bin/bash
+
+echo "$(df -m /dev/mapper/hdd-lv--home | tail -n 1 | awk '{printf("%7.2fG", $4/1024)}')"

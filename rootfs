@@ -1,0 +1,3 @@
+#!/bin/bash
+
+echo "$(df -m /dev/dm-0 | tail -n 1 | awk '{printf("%6.2fG", $4/1024)}')"
