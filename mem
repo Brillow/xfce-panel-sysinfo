@@ -1,3 +1,3 @@
 #!/bin/bash
 
-echo "$(free -o | grep Mem | awk '{ printf("%3.0f%%", ($3/$2)*100)}')"
+echo "$(free | grep Mem | awk '{ printf("%3.0f%%", ($3/$2)*100)}')"
